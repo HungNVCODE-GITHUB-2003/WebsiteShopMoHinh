@@ -1,0 +1,135 @@
+<article class="mainmenucart pt-5 mt-5">
+    <div class="container">
+        <div class="row mb-3 pt-5" id="cart">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Giỏ Hàng</li>
+                </ol>
+            </nav>
+
+            <h1 class="title-head-cart" style="font-family: 'Times New Roman', Times, serif;">Giỏ hàng của bạn</h1>
+
+            <div class="responsive ">
+                <table class="table table-bordered table-hover  text-center mb-0 ">
+                    <thead>
+                        <tr>
+                            <th>Hình</th>
+                            <th style="width: 270px;">Tên sản phẩm</th>
+                            <th>Đơn Gía</th>
+                            <th>Số Lượng</th>
+                            <th>Thành Tiền</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="c in cart track by $index">
+                            <td class="img-thumbnail" style="width: 130px; height: 130px;">
+                                <a href="" aria-disabled="false">
+                                    <img class="w-auto h-auto img-thumbnail" src="{{c.Image}}" alt="">
+                                </a>
+                            </td>
+                            <td style="padding-top: 40px;">
+                                <a class="text-dark" href="" aria-disabled="false">{{c.name}} </a>
+                            </td>
+                            <td style="padding-top: 50px;">
+                                {{c.Price}}
+                            </td>
+                            <td class="qty " style="padding-top: 50px;">
+                                <span ng-click="SLgiam($index)">-</span> {{c.quantity}} <span ng-click="SLtang($index)">+</span>
+                            </td>
+                            <td class="price " style="padding-top: 50px;">{{c.Price*c.quantity |number :3}}</td>
+
+                            <td class="remove" style="padding-top: 50px;">
+                                <i ng-click="delProduct($index)" class="bi bi-trash "></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="clearfix py-3 ">
+                    <a class="continue-shopping border btn btn-dark " title="Mua tiếp " href="#!\ ">Mua tiếp</a>
+                    <button class="update-cart btn btn-dark " name="submit ">Cập nhật giỏ hàng</button>
+                </div>
+
+
+            </div>
+
+
+            <div class="tien d-flex justify-content-end">
+
+                <div class="right-cart border w-80 h-100 p-3 ">
+                    <h2 class="row ">
+                        <div class="col-md-4 ">
+                            <p class="text-start " style="font-family: 'Times New Roman', Times, serif;">Tổng tiền</p>
+                        </div>
+                        <div class="col-md-8 ">
+                            <p class="text-end " style="font-family: 'Times New Roman', Times, serif;">{{TongTien | currency : "VNĐ " :3}}</p>
+                        </div>
+                    </h2>
+                    <a href=""><u>Đã bao gồm thuế. Phí vận chuyển được tính khi thanh toán.</u>
+                    </a>
+                    <a class="checkout " href="#!formVC">
+                        <p class="text-center bg-dark fs-4 text-white " style="font-family: 'Courier New', Courier, monospace;">Thanh toán</p>
+                    </a>
+                </div>
+            </div>
+            <span class="fs-1" style="font-weight: bold;">Featured collection</span>
+            <div ng-repeat="sp in productsC | filter : keyword | limitTo :8:0" class="col-md-3 mb-3 d-flex">
+                <div class="card" style="width: 20rem;">
+
+                    <div class="card-body">
+                        <div class="imghover">
+                            <img src="{{sp.Image}}" class="card-img-top img-thumbnail " alt="... ">
+                        </div>
+                        <a href="#!detail/{{$index}}">
+                            <h5 class="card-title ">{{sp.name | uppercase}}</h5>
+                        </a>
+                        <p class="product-vendor ">SKU :</p>
+                        <p class="card- text-dark" style="font-weight: 500;">{{sp.Price | currency : "VNĐ " : 3 }} <del class="text-danger">5%</del></p>
+                    </div>
+                    <div class="card-footer text-center ">
+                        <button type="button" style="height: 60px;" class=" w-75  rounded-3 fs-5 border border-secondary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Chọn các tùy chọn
+                            </button>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content ">
+                                    <div class="row">
+                                        <div id="surround" class="col-md-5 ">
+                                            <div class="card imghover w-100%">
+                                                <img src="{{sp.Image}}" class="card-img-top img-thumbnail " alt="... ">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 imformation-product ">
+                                            <div class="product-title p-2">
+                                                <p class="newarrival text-center bg-warning w-25 text-white fs-6 " style="font-weight: bold;">New</p>
+                                                <h3>{{sp.name}}</h3>
+                                            </div>
+                                            <div class="clearfix product-sku-date p-2">
+                                                <span class="pull-left product-sku" id="pro_sku">SKU: </span>
+                                            </div>
+                                            <div class="product-price p-2" id="price-preview">
+                                                <span>{{sp.Price }}</span>
+                                            </div>
+                                            <div class="clearfix bg-success p-2 text-white  text-center w-75 ">
+                                                <i class="bi bi-cart-fill float-start fs-1 "></i>
+                                                <button ng-click="" type="button" class="btn btn-default cart fs-2 w-75 ">Add to cart</button>
+                                            </div>
+                                            <div class="info py-4">
+                                                <div class="fb-like" data-href="http://127.0.0.1:5501/ChiTietSP.html" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</article>

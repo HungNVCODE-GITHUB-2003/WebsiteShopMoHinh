@@ -1,0 +1,20 @@
+.product-title h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.product-price span {
+    color: red;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.titlee {
+    color: coral;
+    font-weight: bold;
+}
+
+.title {
+    color: black;
+    font-weight: 500;
+}

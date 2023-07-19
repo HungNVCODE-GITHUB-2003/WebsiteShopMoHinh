@@ -1,0 +1,87 @@
+[
+
+    {
+        "id": "sp1",
+        "Image": "Images/anh1TC.jpg",
+        "name": "MÔ HÌNH NHÂN VẬT OBITO LỤC ĐẠO",
+        "Price": 890.000
+    },
+
+    {
+        "id": "sp2",
+        "Image": "Images/anh2TC.jpg",
+        "name": "MÔ HÌNH NHÂN VẬT ACE BẢN BÉ",
+        "Price": 145.000
+    },
+
+    {
+        "id": "sp3",
+        "Image": "Images/anh3TC.jpg",
+        "name": "MÔ HÌNH NHÂN VẬT LUFFY SNAKE MAN",
+        "Price": 295.000
+    },
+
+    {
+        "id": "sp4",
+        "Image": "Images/anh4TC.jpg",
+        "name": "MÔ HÌNH HOKAGE ĐỆ NHẤT HASHIRAMA",
+        "Price": 400.000
+    },
+
+    {
+        "id": "sp5",
+        "Image": "Images/anh5TC.jpg",
+        "name": "MÔ HÌNH NHÂN VẬT GOKU CƯỠI MÂY",
+        "Price": 215.000
+    },
+
+    {
+        "id": "sp6",
+        "Image": "Images/anh6TC.jpg",
+        "name": "MÔ HÌNH NHÂN VẬT MARCO ĐỨNG",
+        "Price": 145.000
+    },
+
+    {
+        "id": "sp7",
+        "Image": "Images/anh7TC.jpg",
+        "name": "MÔ HÌNH NHÂN VẬT UCHIHA MADARA LỤC ĐẠO",
+        "Price": 555.000
+    },
+
+    {
+        "id": "sp8",
+        "Image": "Images/anh8TC.jpg",
+        "name": "MÔ HÌNH NHÂN VẬT ZORO TỨ RỒNG",
+        "Price": 290.000
+    },
+
+    {
+        "id": "sp9",
+        "Image": "Images/anh9TC.jpg",
+        "name": "MÔ HÌNH GUY GUY CAO CẤP",
+        "Price": 180.000
+    },
+
+    {
+        "id": "sp10",
+        "Image": "Images/anh1SP.jpg",
+        "name": "TRANH GHÉP 5 CHỦ ĐỀ NARUTO",
+        "Price": 195.000
+    },
+
+    {
+        "id": "sp11",
+        "Image": "Images/anh11TC.jpg",
+        "name": "MÔ HÌNH NHÂN VẬT ACE BẢN TO",
+        "Price": 1200.000
+    },
+
+    {
+        "id": "sp12",
+        "Image": "Images/anh12TC.jpg",
+        "name": "TRANH ANIME TRÁNG GƯƠNG LED ĐIỂM",
+        "Price": 290.000
+    }
+
+]

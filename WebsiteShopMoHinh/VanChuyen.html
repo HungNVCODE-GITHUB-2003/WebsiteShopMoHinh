@@ -1,0 +1,257 @@
+<article class="mainmenucart pt-5 mt-5 ">
+    <div class="container">
+        <div class="row mb-3 pt-5" id="cart">
+            <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">HUNGSMALLSHOP</h2>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#!/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Thông Tin Giao Hàng</li>
+                </ol>
+            </nav>
+            <div class="col-md-7">
+                <form action="" name="formvalidate">
+                    <div class="card">
+                        <div class="card-header ">
+                            <h2 class="card-title" style="font-family: 'Times New Roman', Times, serif;">Thông tin giao hàng</h2>
+                            <p class="section-content-text">
+                                Bạn đã có tài khoản?
+                                <a href="#!Account">Đăng nhập</a>
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <form class="needs-validation py-5  " novalidate style="font-weight: bold;">
+                                <div class="form-group py-2 ">
+                                    <input placeholder="Họ Và Tên" ng-model="fullname" name="txtFullname" type="text" class="form-control" required>
+                                    <label class="text-danger m-1" ng-show="formvalidate.txtFullname.$invalid">
+                                        Vui lòng nhập họ và tên ?
+                                    </label>
+                                </div>
+                                <div class="form-group row py-2">
+                                    <div class="col-md-6">
+                                        <input placeholder="Email" type="email" class="form-control" ng-model="email" name="txtEmail" required>
+                                        <label class="text-danger m-2 " ng-show="formvalidate.txtEmail.$invalid">
+                                                Không đúng dạng Email ?
+                                            </label>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <input placeholder="Số Điện Thoại" ng-model="sdt" name="txtSDT" type="text" class="form-control" required>
+                                        <label class="text-danger m-2" ng-show="formvalidate.txtSDT.$invalid">
+                                            Vui lòng nhập SĐT ?
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group py-2">
+                                    <input placeholder="Địa Chỉ" ng-model="diachi" name="txtDiachi" type="text" class="form-control" required>
+                                    <label class="text-danger m-2" ng-show="formvalidate.txtDiachi.$invalid">
+                                        Vui lòng nhập địa chỉ ?
+                                    </label>
+                                </div>
+                                <div class="form-group py-3 row">
+                                    <div class="col-md-4">
+                                        <select class="form-select " aria-label="Default select example">
+                                            <option selected>Chọn tỉnh / thành</option>
+                                            <option value="1">Hà Nội</option>
+                                            <option value="2">Hà Giang</option>
+                                            <option value="3">Bắc Cạn</option>
+                                          </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-select " aria-label="Default select example">
+                                            <option selected>Chọn quận / huyện</option>
+                                            <option value="1">Huyện thường tín</option>
+                                            <option value="2">Huyện thường tín</option>
+                                            <option value="3">Huyện thường tín</option>
+                                          </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-select " aria-label="Default select example">
+                                            <option selected>Chọn phường / xã</option>
+                                            <option value="1">Bắc sơn</option>
+                                            <option value="2">Bắc sơn</option>
+                                            <option value="3">Bắc sơn</option>
+                                          </select>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+
+
+                    </div>
+                    <div class="VC py-2">
+                        <h2 class="card-title " style="font-family: 'Times New Roman', Times, serif;">Phương thức vận chuyển</h2>
+                        <div class="content-box  blank-slate border text-center py-2">
+                            <i class="bi bi-box2 fs-1 "></i>
+                            <p>Vui lòng chọn tỉnh / thành để có danh sách phương thức vận chuyển.</p>
+                        </div>
+                    </div>
+                    <div class="TT py-2">
+                        <h2 class="card-title " style="font-family: 'Times New Roman', Times, serif;">Phương thức thanh toán</h2>
+                        <div class="accordion py-2" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <i class="bi bi-truck text-dark fs-4" ></i> Thanh toán khi giao hàng (COD)
+                                </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-center">
+                                        Chuyển khoản qua tài khoản <br> Vietcombank STK : 0011004210828 <br> Ngân hàng : Vietcombank <br> Chi nhánh : sở giao dịch <br> Chủ tài khoản : Do Viet Trung
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="bi bi-credit-card-2-front-fill  text-dark fs-4"></i> Chuyển khoản qua ngân hàng
+                                </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="blank-slate text-center">
+                                            Chuyển khoản qua tài khoản <br> Vietcombank STK : 0011004210828 <br> Ngân hàng : Vietcombank <br> Chi nhánh : sở giao dịch <br> Chủ tài khoản : Do Viet Trung
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <i class="bi bi-paypal text-dark fs-4"></i> Phương thức thanh toán tùy chọn
+                                </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="blank-slate text-center">
+                                            Chuyển khoản qua tài khoản <br> Vietcombank STK : 0011004210828 <br> Ngân hàng : Vietcombank <br> Chi nhánh : sở giao dịch <br> Chủ tài khoản : Đỗ Việt Trung
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-md-5">
+                <di class="sidebar">
+                    <div class="sidebar-content">
+                        <div class="order-summary order-summary-is-collapsed">
+                            <div class="order-summary-sections">
+                                <div class="order-summary-section order-summary-section-product-list" data-order-summary-section="line-items">
+                                    <table class="product-table">
+                                        <thead class="text-center table table-bordered table-hover  text-center mb-0 ">
+                                            <tr>
+                                                <!-- <th>Hình</th>
+                                                <th style="width: 270px;">Tên sản phẩm</th>
+                                                <th>Đơn Gía</th> -->
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center table table-bordered table-hover  text-center mb-0 border border-dark  ">
+                                            <tr ng-repeat="c in cart track by $index">
+                                                <td class="img-thumbnail" style="width: 100px; height: 100px;">
+                                                    <button class="position-relative ">                            
+                                                            <img class="w-auto h-auto img-thumbnail" src="{{c.Image}}" alt="">                                           
+                                                           
+                                                          </button>
+                                                </td>
+                                                <td class="align-middle border border-dark">
+                                                    <button class="position-relative ">                            
+                                                        {{c.name}}                                         
+                                                       
+                                                      </button>
+                                                </td>
+
+                                                <td class="align-middle border border-dark">
+                                                    <button class="position-relative ">                            
+                                                        {{c.Price|number :2}}                                     
+                                                       
+                                                      </button>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <hr>
+                                <div class="">
+                                    <form id="form_discount_add" accept-charset="UTF-8" method="post">
+                                        <input name="utf8" type="hidden" value="✓">
+                                        <div class="fieldset">
+                                            <div class="field row ">
+                                                <div class="col-md-9">
+                                                    <div class="form-group form-floating ">
+                                                        <div class="form-floating">
+                                                            <input class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 50px;"></input>
+                                                            <label for="floatingTextarea2">Mã giảm giá</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <button type="submit" class=" btn btn-default bg-secondary text-white " style="height: 50px;width: 120px;">
+                                                        <span class="btn-content">Áp Dụng</span>                                                     
+                                                    </button>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <hr>
+                                <div class="">
+                                    <div class="row">
+                                        <div class="col-md-4 ">
+                                            <td class="total-line-name">Tạm tính</td>
+                                        </div>
+                                        <div class="col-md-8 d-flex justify-content-end">
+                                            <td class="total-line-price ">
+                                                <span class="">
+                                                            {{TongTien | currency : "" }}
+                                                        </span>
+                                            </td>
+                                        </div>
+                                        <div class="col-md-4 ">
+                                            <td class="total-line-name">Phí vận chuyển</td>
+                                        </div>
+                                        <div class="col-md-8 d-flex justify-content-end">
+                                            <td class="total-line-price ">
+                                                <span class="">
+                                                    Tính Vào Bước Tiếp Theo
+                                                        </span>
+                                            </td>
+                                        </div>
+
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-4 ">
+                                            <span class="payment-due-label-total">Tổng cộng</span>
+                                        </div>
+                                        <div class="col-md-8 d-flex justify-content-end">
+                                            <span class="payment-due-price  " data-checkout-payment-due-target="890000000">
+                                                {{TongTien | currency : "VNĐ " :3}}
+                                            </span>
+                                            <span class="checkout_version" display:none="" data_checkout_version="71">
+                                            </span>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </di v>
+            </div>
+        </div>
+    </div>
+</article> di </div>
+div</nav>
+heaer | currency : "" }} </span>
+t </div>

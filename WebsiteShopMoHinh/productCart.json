@@ -1,0 +1,31 @@
+[
+
+    {
+        "id": "sp1",
+        "Image": "Images/anh1C.jpg",
+        "name": "DECAL DÁN TƯỜNG 3D ANIME CHAINSAW MAN DECAL0141",
+        "Price": 89.000
+    },
+
+    {
+        "id": "sp2",
+        "Image": "Images/anh2C.jpg",
+        "name": "DECAL DÁN TƯỜNG 3D ANIME CHAINSAW MAN DECAL0142",
+        "Price": 89.000
+    },
+
+    {
+        "id": "sp3",
+        "Image": "Images/anh3C.jpg",
+        "name": "DECAL DÁN TƯỜNG 3D ANIME CHAINSAW MAN DECAL0143",
+        "Price": 89.000
+    },
+
+    {
+        "id": "sp4",
+        "Image": "Images/anh4C.jpg",
+        "name": "DECAL DÁN TƯỜNG 3D ANIME CHAINSAW MAN DECAL0144",
+        "Price": 89.000
+    }
+
+]

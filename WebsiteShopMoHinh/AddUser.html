@@ -1,0 +1,64 @@
+<article class="mainmenucart pt-5 mt-5 ">
+    <div class="container">
+        <div class="row mb-3 pt-5" id="cart">
+            <div class="col-md-4">
+                <form role="form">
+                    <h2 class="dk fs-1" style="text-align: center;font-family: 'Times New Roman', Times, serif;">QUẢN LÝ USER</h2>
+                    <div class="form-group   mb-3">
+                        <label>Fullname</label>
+                        <input type="text" class="form-control" ng-model="user.name">
+                    </div>
+                    <div class="form-group  mb-3">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" ng-model="user.email">
+                    </div>
+
+                    <div class="form-group   mb-3">
+                        <label>Password</label>
+                        <input type="password" class="form-control" ng-model="user.password">
+                    </div>
+                    <!-- <button type="button" ng-click="add_user()">ADĐ</button> -->
+                    <button ng-Click="insert()" ng-show="index == -1" ng-disabled="index != -1" type="submit" class="btn btn-primary">Thêm</button>
+                    <button ng-Click="update()" ng-hide="index == -1" type="submit" class="btn btn-primary">Sửa</button>
+                    <button ng-Click="delete()" type="submit" class="btn btn-primary">Xóa</button>
+                    <button ng-Click="cancel()" type="submit" class="btn btn-primary">Hủy</button>
+                    <button ng-Click="clear()" type="submit" class="btn btn-primary">Mới</button>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <table class="table table-bordered table-hover  text-center mb-0 ">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Fullname</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="u in dsUSERs" class="">
+                            <td class="img-thumbnail">
+                                <a href="" aria-disabled="">
+                                    {{$index}}
+                                </a>
+                            </td>
+                            <td>
+                                <a class="text-dark" href="" aria-disabled="">{{u.name}}</a>
+                            </td>
+                            <td aria-disabled="">
+                                {{u.email}}
+                            </td>
+                            <td aria-disabled="">
+                                {{u.password}}
+                            </td>
+                            <td>
+                                <button ng-Click="edit($index)" class="btn btn-link text-danger" style="text-decoration: none;">Edit</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</article>

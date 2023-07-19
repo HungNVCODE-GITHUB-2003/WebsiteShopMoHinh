@@ -1,0 +1,230 @@
+<article class="mainmenucart pt-5 mt-5">
+    <div class="container">
+        <div class="row  pt-5">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Mô Hình Naruto</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Mô Hình Naruto đệ nhị</li>
+                </ol>
+            </nav>
+            <section id="product" class="clearfix">
+                <div class="container">
+                    <div class="row ">
+                        <div id="surround" class="col-md-1 ">
+                            <div class="row">
+                                <fieldset>
+                                    <img class="img-thumbnail" src="{{productsSP[index].Image}}" alt="">
+                                    <img class="img-thumbnail" src="{{productsSP[index].Image}}" alt="">
+                                    <img class="img-thumbnail" src="{{productsSP[index].Image}}" alt="">
+                                    <img class="img-thumbnail" src="{{productsSP[index].Image}}" alt="">
+                                    <img class="img-thumbnail" src="{{productsSP[index].Image}}" alt="">
+                                    <img class="img-thumbnail" src="{{productsSP[index].Image}}" alt="">
+
+                            </div>
+                        </div>
+                        <div id="surround" class="col-md-5 ">
+                            <div class="card imghover w-100%">
+                                <img src="{{productsSP[index].Image}}" class="card-img-top img-thumbnail " alt="... ">
+                            </div>
+                        </div>
+                        <div class="col-md-4 imformation-product ">
+                            <div class="product-title p-2">
+                                <p class="newarrival text-center bg-warning w-25 text-white fs-6 " style="font-weight: bold;">New</p>
+                                <h3>{{productsSP[index].name}}</h3>
+                            </div>
+                            <div class="clearfix product-sku-date p-2">
+                                <span class="pull-left product-sku" id="pro_sku">SKU : </span>
+                            </div>
+                            <div class="clearfix product-sku-date p-2">
+                                <span class="pull-left product-sku" id="pro_sku"> <a ng-click="addCart(productsSP[index])" class=""  style="font-weight: bold;" href="#!formVC"> <u> Phí vận chuyển</u></a>  được tính khi thanh toán.</span>
+                            </div>
+                            <div class="product-price p-2 fs-4 text-danger" id="price-preview">
+                                <span>{{productsSP[index].Price| currency : "VNĐ " : 3 }}</span>
+                            </div>
+                            <div class="  py-3 ">
+                                <button style="width: 350px; font-family: 'Times New Roman', Times, serif;" ng-click="addCart(productsSP[index])" type="button" class="btn btn-secondary btn-lg fs-4 ">Thêm vào giỏ hàng</button>
+                            </div>
+                            <div class="info py-4">
+                                <div class="fb-like" data-href="http://127.0.0.1:5500/ChiTietSP.html" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
+                            </div>
+                            <div>
+                                <a class="continue-shopping" style="font-family: 'Times New Roman', Times, serif;" title="Mua tiếp " href="#!\ "><u> <i class="bi bi-caret-left-fill"></i> Tiếp Tục Mua Hàng Tiếp</u> </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 box-service ">
+                            <div class="box-service-product">
+                                <div class="header-box-service-product text-center border bg-light ">
+                                    <div class="titlee fs-5 ">Giao hàng tận tay bạn</div>
+                                    <div class="content p-2">từ 2-3 ngày làm việc</div>
+                                </div>
+                                <div class="content-box-service-product row py-2">
+                                    <div class="col-md-12 ">
+                                        <div class="border-service-product d-flex ">
+                                            <div class="box-anh py-2">
+                                                <img src="images/icon-service-1.webp">
+                                            </div>
+                                            <div class="box-content">
+                                                <div class="title">Tư Vấn quà tặng</div>
+                                                <div class="content">bạn gái - bạn trai - bạn bè</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="col-md-12">
+                                        <div class="border-service-product d-flex">
+                                            <div class="box-anh py-2">
+                                                <img src="images/icon-service-2.webp">
+                                            </div>
+                                            <div class="box-content">
+                                                <div class="title">Giá tốt nhất</div>
+                                                <div class="content">Giá hợp lý nhất thị trường</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="col-md-12">
+                                        <div class="border-service-product d-flex">
+                                            <div class="box-anh py-2">
+                                                <img src="images/icon-service-3.webp">
+                                            </div>
+                                            <div class="box-content">
+                                                <div class="title">Thanh toán COD</div>
+                                                <div class="content">Thanh toán khi nhận hàng</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-12">
+                                        <div class="border-service-product d-flex">
+                                            <div class="box-anh py-2">
+                                                <img src="images/icon-service-4.png">
+                                            </div>
+                                            <div class="box-content">
+                                                <div class="title">Hỗ trợ online</div>
+                                                <div class="content">0989787394</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="col-md-8 py-3">
+                <div class="product-comment">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs border alert alert-dark py-2" id="tab-product-template" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="update-tab" data-bs-toggle="tab" data-bs-target="#update-tab-pane" type="button" role="tab" aria-controls="update-tab-pane" aria-selected="true">
+                                    <a data-toggle="tab" data-spy="scroll" href="#description" aria-expanded="true">
+                                        <span>Mô tả sản phẩm</span>
+                                    </a>
+                                </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="list-tab" data-bs-toggle="tab" data-bs-target="#list-tab-pane" type="button" role="tab" aria-controls="list-tab-pane" aria-selected="false">
+                                    <a data-toggle="tab" data-spy="scroll" href="#comment" aria-expanded="false">
+                                        <span>Bình luận</span>
+                                    </a>
+                                </button>
+                        </li>
+
+                    </ul>
+                    <!-- Tab panes -->
+                    <div id="description" class="active border border-success p-2 mb-2">
+                        <div class="container-fluid product-description-wrapper">
+
+                            <p class="text-center"><span><span style="color:#c0392b "><strong>Mô hình Đệ Nhị Senju Tobirama Thủy Long Đạn trong Naruto</strong></span></span>
+                            </p>
+                            <p><strong>Tiêu sử nhân vật:</strong></p>
+                            <p>Senju Tobirama là em trai của Senju Hashirama và cũng là vị Hokage thứ 2 của Làng Lá, là người tài giỏi trong việc sử dụng các nhẫn thuật về hệ thủy và đồng thời ông còn được người đời biết đến nhiều với việc ông đã tạo ra
+                                rất nhiều cấm thuật mà đến tận đời&nbsp;của Naruto đã có rất nhiều ninja sử dụng và tiêu biểu nhất là ông được rất nhiều fan gọi vui là anti fan Uchiha chính hiệu</p>
+                            <p><strong>Thông tin sản phẩm:</strong></p>
+                            <p><strong>- Chiều cao: 43cm.</strong></p>
+                            <p><strong>- Chất liệu: </strong>PVC.</p>
+                            <p class="text-center"><img height="16 " width="16 " alt=" " src="images/tim.png ">CẢM ƠN ANH EM ĐÃ CHỌN MARVELSTORE <img height="16 " width="16 " alt=" " src="images/tim.png"></p>
+                            <p class="text-center ">Anh em ghé thăm gian hàng để xem được nhiều sản phẩm thú vị nhé<img height="16 " width="16 " alt="‼️ " src="images/thang.png"></p>
+                            <p class="py-4">- Shop chuẩn bị hàng trong vòng 1-2 ngày dành cho hàng có sẵn.</p>
+                            <p>- Khách sỉ liên hệ zalo: 0989787394</p>
+
+                            <p>Marvelstore cam kết mang đến cho khách hàng cảm giác hài lòng nhất, nếu không hài lòng hãy liên hệ hotline: 0989787394 để được tư vấn và giải quyết mọi vấn đề của khách hàng gặp phải
+                                <img class="" height="16 " width="16 " alt=" " src="images/tim.png"></p>
+                            <p class="text-center py-3"><img height="16 " width="16 " alt="" src="images/mattroi.png"><img height="16 " width="16 " alt="" src="images/mattroi.png">
+                                <img height="16 " width="16 " alt="" src="images/mattroi.png"><img height="16 " width="16 " alt="" src="images/mattroi.png">
+                                <img height="16 " width="16 " alt="" src="images/mattroi.png">
+                                <img height="16 " width="16 " alt="" src="images/mattroi.png"><img height="16 " width="16 " alt="" src="images/mattroi.png">
+                                <img height="16 " width="16 " alt=" " src="images/mattroi.png">
+                                <img height="16 " width="16 " alt=" " src=" images/mattroi.png"><img height="16 " width="16 " alt=" " src="images/mattroi.png">
+                                <img height="16 " width="16 " alt=" " src="images/mattroi.png"></p>
+
+                            <p style="text-align: center; "><img height="16 " width="16 " alt="🇻🇳 " src="images/co.png"> Tham khảo web: marvelstore.vn <img height="16 " width="16
+                                        " alt=" " src="images/co2.png"></p>
+
+                            <p>Mua hàng trên Shopee: <a href="#"> &nbsp; https://shope.ee/3ATWg61vIf</a></p>
+
+                            <p>Trải nghiệm kênh youtube của shop: <a href="#"> &nbsp; https://bit.ly/2MQLy9O</a></p>
+                            <p><img height="16 " width="16 " alt="" src="images/nha.png"> &nbsp;Mua hàng trực tiếp tại Marvelstore:</p>
+                            <p>+ Số 77 Vương Thừa Vũ - Thanh Xuân - Hà Nội</p>
+                            <p>+ 0989787394</p>
+                        </div>
+                    </div>
+
+                    <div id="comment" class="">
+                        <div class="group-index mb15">
+                            <div class="title-block">
+                                <h3 class="title-group">Bình luận</h3>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="fb-comments" data-href="http://127.0.0.1:5501/ChiTietSP.html" data-width="100%" data-numposts="5"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4  py-3 ">
+                <div class="product-related">
+                    <div class="title py-2 alert alert-dark">
+                        <h3 class="title-group">
+                            Sản phẩm liên quan
+                        </h3>
+                    </div>
+                    <div ng-repeat="sp in products | filter : keyword | limitTo :8:0" class="list-product">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4 imghover">
+                                    <img src="{{sp.Image}}" class="img-fluid rounded-start " alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <a href="#!detail/{{$index}}">
+                                            <h5 class="card-title ">{{sp.name | uppercase}}</h5>
+                                        </a>
+                                        <p class="card- text-dark" style="font-weight: 500;">{{sp.Price | currency : "VNĐ " : 3 }} <del class="text-danger">5%</del></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="ratio ratio-16x9 pt-5 mt-5">
+            <iframe width="340px " height="200px " src="https://www.youtube.com/embed/we2ckWN3L5A " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+        </div>
+</article>

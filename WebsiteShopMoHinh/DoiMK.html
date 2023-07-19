@@ -1,0 +1,28 @@
+<article class="mainmenucart py-5 m-5 " style="height: 600px;">
+    <div class="container">
+        <div class="row mb-3 justify-content-center  " id="cart ">
+            <div class="Login p-5 ">
+                <form class="needs-validation" name="formvalidate">
+                    <h2 class="dk fs-1 p-3" style="text-align: center;">ĐẶT LẠI MẬT KHẨU</h2>
+
+                    <p class="py-4" style="text-align: center;">
+                        Chúng tôi sẽ gửi email cho bạn để đặt lại mật khẩu
+                    </p>
+                    <div class="form-group  mb-5">
+                        <label for="exampleInputEmail1" class="form-label ">Email address</label>
+                        <input type="email" class="form-control" ng-model="email" name="txtEmail" required>
+                        <label class="text-danger " ng-show="formvalidate.txtEmail.$invalid">
+                                Không đúng dạng Email ?
+                            </label>
+                    </div>
+                    <button type="submit" class="btn btn-dark w-100 py-3 " style="text-align: center;">Gửi</button>
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</article>
